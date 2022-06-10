@@ -15,6 +15,10 @@
 		A8476B572852CB6400FF9688 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8476B562852CB6400FF9688 /* MovieResponse.swift */; };
 		A8476B592852CB8E00FF9688 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8476B582852CB8E00FF9688 /* Language.swift */; };
 		A8476B5B2852CB9B00FF9688 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8476B5A2852CB9B00FF9688 /* Genre.swift */; };
+		A8476B5F2852CC4500FF9688 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8476B5E2852CC4500FF9688 /* MovieCell.swift */; };
+		A8476B622852CC7D00FF9688 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8476B612852CC7D00FF9688 /* ImageLoader.swift */; };
+		A8476B642852CC9100FF9688 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8476B632852CC9100FF9688 /* ImageCache.swift */; };
+		A8476B662852CC9E00FF9688 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8476B652852CC9E00FF9688 /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		A8476B562852CB6400FF9688 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		A8476B582852CB8E00FF9688 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		A8476B5A2852CB9B00FF9688 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		A8476B5E2852CC4500FF9688 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		A8476B612852CC7D00FF9688 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		A8476B632852CC9100FF9688 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		A8476B652852CC9E00FF9688 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,9 @@
 		A8476B442852CB3E00FF9688 /* MoviesList */ = {
 			isa = PBXGroup;
 			children = (
+				A8476B602852CC6E00FF9688 /* ImagesHelper */,
+				A8476B5D2852CC2300FF9688 /* ViewModel */,
+				A8476B5C2852CC1400FF9688 /* View */,
 				A8476B532852CB4B00FF9688 /* Model */,
 				A8476B452852CB3E00FF9688 /* MoviesListApp.swift */,
 				A8476B472852CB3E00FF9688 /* ContentView.swift */,
@@ -85,6 +96,31 @@
 				A8476B5A2852CB9B00FF9688 /* Genre.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A8476B5C2852CC1400FF9688 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8476B5E2852CC4500FF9688 /* MovieCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8476B5D2852CC2300FF9688 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8476B602852CC6E00FF9688 /* ImagesHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A8476B612852CC7D00FF9688 /* ImageLoader.swift */,
+				A8476B632852CC9100FF9688 /* ImageCache.swift */,
+				A8476B652852CC9E00FF9688 /* ImageView.swift */,
+			);
+			path = ImagesHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,11 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8476B662852CC9E00FF9688 /* ImageView.swift in Sources */,
+				A8476B5F2852CC4500FF9688 /* MovieCell.swift in Sources */,
 				A8476B482852CB3E00FF9688 /* ContentView.swift in Sources */,
 				A8476B592852CB8E00FF9688 /* Language.swift in Sources */,
+				A8476B642852CC9100FF9688 /* ImageCache.swift in Sources */,
 				A8476B572852CB6400FF9688 /* MovieResponse.swift in Sources */,
 				A8476B5B2852CB9B00FF9688 /* Genre.swift in Sources */,
 				A8476B462852CB3E00FF9688 /* MoviesListApp.swift in Sources */,
+				A8476B622852CC7D00FF9688 /* ImageLoader.swift in Sources */,
 				A8476B552852CB5900FF9688 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
