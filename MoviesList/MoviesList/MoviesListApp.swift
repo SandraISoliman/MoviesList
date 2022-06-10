@@ -11,7 +11,7 @@ import SwiftUI
 struct MoviesListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MoviesList(moviesViewModel: MoviesViewModel(apiService: APIService()))
         }
     }
 }
